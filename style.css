@@ -1,0 +1,59 @@
+@font-face {
+    font-family: vazir;
+    src: url(./font/Vazir-Light-FD.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    overflow: auto;
+    padding: 0 1rem;
+    text-align: right;
+}
+
+body,
+html {
+    font-family: 'vazir';
+}
+
+#navbar {
+    background: #336e7b;
+    color: #fff;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 0.6rem;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: right;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+    background: #e4f1fe;
+    color: #34495e;
+}
