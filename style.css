@@ -32,7 +32,7 @@ html {
     text-decoration: none;
 }
 
-#navbar h1 {
+#navbar .logo {
     float: left;
     padding-top: 0.6rem;
 }
