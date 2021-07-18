@@ -91,12 +91,14 @@ html {
     display: inline-block;
     background: #c5eff7;
     padding: 0.5rem 1rem;
+    margin: 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
     color: #2c3e50;
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -148,35 +150,44 @@ html {
     color: #fff;
 }
 
-.main-footer {
-    background: #336e7b;
-    color: #fff;
-    text-align: center;
-    padding: 2rem auto;
+#contact {
+    display: flex;
+    justify-content: center;
 }
 
-#main-form .form-group {
-    margin-bottom: 1rem;
+#contact .contact-form {
+    flex-basis: 600px;
+    text-align: right;
 }
 
-#main-form label {
+#contact .contact-form label {
     display: block;
-    margin-bottom: 5px;
+    margin: 1rem 0;
 }
 
-#main-form input,
-#main-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 1rem;
     border: 1px solid #ddd;
+    text-align: right;
 }
 
-#main-form textarea {
-    height: 12rem;
+
+/* .contact-form input:,
+.contact-form textarea:focus {
+    border: 1px solid #c5eff7;
+} */
+
+.header-form {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
-#main-form .container {
-    margin: 5rem 20rem;
+.contact-form p {
+    text-align: center;
 }
 
 #featurs h1 {
@@ -211,4 +222,22 @@ html {
     flex-direction: column;
     justify-content: center;
     color: white;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #336e7b;
+    color: #fff;
+    /* text-align: center; */
+    /* padding: 0 2rem; */
+}
+
+.main-footer i {
+    padding: 0.25rem 0.5rem;
+}
+
+.main-footer p {
+    color: #c5eff7;
 }

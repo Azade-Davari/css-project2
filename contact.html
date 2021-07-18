@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
 
@@ -14,40 +15,48 @@
 <body>
     <header>
         <nav id="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="./index.html">Logo.ir</a></h1>
-                <ul>
-                    <li><a class="curent" href="./index.html">خانه</a></li>
-                    <li><a href="./about.html">درباره ما</a></li>
-                    <li><a href="./contact.html">تماس با ما</a></li>
-                </ul>
-            </div>
+            <h1 class="logo"><a href="./index.html"><span class="logo-primary"> Logo</span>.ir</a></h1>
+            <ul>
+                <li><a class="curent" href="./index.html">خانه</a></li>
+                <li><a href="./about.html">درباره ما</a></li>
+                <li><a href="./contact.html">تماس با ما</a></li>
+            </ul>
         </nav>
-        <section id="main-form">
-            <div class="container">
-                <h1 class="header-form">content us</h1>
+        <section id="contact">
+            <div class="contact-form">
+                <h1 class="header-form">ارتباط با ما</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, sunt.</p>
                 <form action="#">
                     <div class="form-group">
-                        <label for="name">name</label>
-                        <input type="text" id="name">
+                        <label for="name">نام</label>
+                        <input type="text" id="name" placeholder="نام را وارد کنید">
                     </div>
                     <div class="form-group">
-                        <label for="email">email</label>
-                        <input type="email" id="email">
+                        <label for="email">ایمیل</label>
+                        <input type="email" id="email" placeholder="ایمیل خود را وارد کنید">
                     </div>
                     <div class="form-group">
-                        <label for="message">message</label>
-                        <textarea name="message" id="message"></textarea>
+                        <label for="message">پیام</label>
+                        <textarea name="message" id="message" placeholder="پیام"></textarea>
                     </div>
-                    <button type="submit" class="btn">send</button>
+                    <div><input type="submit" class="btn" value="ارسال"></input>
+                    </div>
                 </form>
             </div>
         </section>
 
     </header>
     <footer class="main-footer">
-        <p>www.logo.ir &copy; 2021</p>
+        <div>
+            <p>Copyright &copy; 2021</p>
+        </div>
+        <div>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-telegram fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+        </div>
+
     </footer>
 </body>
 
