@@ -23,9 +23,26 @@ html {
 }
 
 #navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background: #336e7b;
     color: #fff;
-    overflow: auto;
+    padding: 0 2rem;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+#navbar ul li {
+    padding: 1rem;
+    font-weight: bold;
 }
 
 #navbar a {
@@ -33,30 +50,16 @@ html {
     text-decoration: none;
 }
 
-#navbar .logo {
-    float: left;
-    padding-top: 0.6rem;
-}
-
-#navbar ul {
-    float: right;
-    list-style: none;
-}
-
-#navbar ul li {
-    float: right;
-}
-
-#navbar ul li a {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-}
-
 #navbar ul li a:hover,
 #navbar ul li a.current {
     background: #e4f1fe;
     color: #34495e;
+    border-radius: 5px;
+    padding: 0.75rem;
+}
+
+.logo-primary {
+    color: #c5eff7;
 }
 
 .showcase {
@@ -196,8 +199,16 @@ html {
     text-align: justify;
 }
 
-#featurs .items .item i {
+#featurs .items .item span {
     background: #336e7b;
     padding: 2rem;
     border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    align-content: center;
+    display: flex;
+    margin: 0 auto 2rem auto;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
 }
