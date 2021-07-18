@@ -1,5 +1,25 @@
-.showcase-content .lead {
-    font-size: 1rem;
+@media screen and (max-width:500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar .logo {
+        margin-top: 1rem;
+        margin-bottom: 0.2rem;
+        text-align: center;
+    }
+    #navbar ul {
+        flex-direction: column;
+        padding: 0.2rem;
+    }
+}
+
+#featurs .items {
+    display: block;
+}
+
+.showcase {
+    height: 100%;
 }
 
 #home-info .info-img {
@@ -7,15 +27,15 @@
 }
 
 #home-info .info-content {
-    float: none;
+    text-align: center;
     width: 100%;
 }
 
-.box {
-    float: none;
-    width: 100%;
+.contact-form {
+    padding: 1.25rem;
 }
 
-.showcase-content p {
-    font-size: 1.5rem;
+.main-footer {
+    display: flex;
+    flex-direction: column-reverse;
 }
